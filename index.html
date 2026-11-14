@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Venkata Pavan Kumar Dath &amp; Yasaswani | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;500&family=Great+Vibes&family=Lora:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="locked">
+
+  <!-- Falling petals (shared) -->
+  <canvas id="petals"></canvas>
+
+  <!-- Opening page -->
+  <section id="opening">
+    <div class="card">
+      <div class="pillar left"></div>
+      <div class="pillar right"></div>
+      <div class="heart">♥</div>
+      <h1 class="open-names">Yasaswani<span class="amp">&amp;</span>Pavan</h1>
+      <div class="divider small"><span>❦</span></div>
+      <p class="open-date">December 12, 2026</p>
+      <p class="open-sub">Cordially Invites</p>
+      <button id="openBtn" type="button">Open</button>
+    </div>
+  </section>
+
+  <!-- Main page -->
+  <main id="main" aria-hidden="true">
+
+    <header class="hero">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Together with their families</p>
+        <h2 class="script big">Venkata Pavan Kumar Dath</h2>
+        <p class="amp-big">&amp;</p>
+        <h2 class="script big">Yasaswani</h2>
+        <p class="hero-date">Saturday, December 12, 2026</p>
+        <p class="hero-place">SCCR Convention · Mydukur</p>
+        <p class="hero-quote">“Your presence makes us very happy”</p>
+      </div>
+      <div class="arch reveal">
+        <img src="images/couple.jpg" alt="Venkata Pavan Kumar Dath and Yasaswani" />
+      </div>
+      <div class="scroll-hint"><span>Scroll</span><i></i></div>
+    </header>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Saturday, December 12, 2026</span><b>◆</b>
+        <span>SCCR Convention · Mydukur</span><b>◆</b>
+        <span>Your presence makes us very happy</span><b>◆</b>
+        <span>Venkata Pavan Kumar Dath &amp; Yasaswani</span><b>◆</b>
+        <span>Saturday, December 12, 2026</span><b>◆</b>
+        <span>SCCR Convention · Mydukur</span><b>◆</b>
+        <span>Your presence makes us very happy</span><b>◆</b>
+        <span>Venkata Pavan Kumar Dath &amp; Yasaswani</span><b>◆</b>
+      </div>
+    </div>
+
+    <section class="section countdown">
+      <p class="eyebrow reveal">Save the date</p>
+      <h3 class="title reveal">Counting Down</h3>
+      <div class="divider reveal"><span>◆</span></div>
+      <div class="count-grid reveal">
+        <div class="count-box"><strong id="d">00</strong><small>Days</small></div>
+        <div class="count-box"><strong id="h">00</strong><small>Hours</small></div>
+        <div class="count-box"><strong id="m">00</strong><small>Minutes</small></div>
+        <div class="count-box"><strong id="s">00</strong><small>Seconds</small></div>
+      </div>
+    </section>
+
+    <section class="section invite">
+      <div class="quote-mark reveal">“</div>
+      <p class="invite-text reveal">With hearts full of joy, together with our families, we invite you to witness the sacred union of two souls and two lives — and to bless us as we begin this beautiful journey.</p>
+      <h3 class="script mid reveal">Venkata Pavan Kumar Dath &amp; Yasaswani</h3>
+      <p class="eyebrow warm reveal">Together with their families</p>
+      <p class="hero-quote reveal">“Your presence makes us very happy”</p>
+      <div class="divider reveal"><span>◆</span></div>
+      <p class="big-date reveal">12 · 12 · 2026</p>
+    </section>
+
+    <section class="section events">
+      <p class="eyebrow reveal">The celebrations</p>
+      <h3 class="title reveal">Wedding Events</h3>
+      <div class="divider reveal"><span>◆</span></div>
+      <div class="event-grid">
+        <article class="event reveal">
+          <div class="icon">☀</div>
+          <h4>Haldi Ceremony</h4>
+          <ul>
+            <li>📅 Friday, Dec 11, 2026</li>
+            <li>🕘 09:00 AM onwards</li>
+            <li>📍 Banquet Lawn, SCCR Convention</li>
+            <li>👕 Sunlit Yellow / Shades of Gold</li>
+          </ul>
+        </article>
+        <article class="event reveal">
+          <div class="icon">✿</div>
+          <h4>Mehendi Sangeet</h4>
+          <ul>
+            <li>📅 Friday, Dec 11, 2026</li>
+            <li>🕡 06:30 PM onwards</li>
+            <li>📍 Grand Hall, SCCR Convention</li>
+            <li>👕 Festive Ethnic / Emerald &amp; Floral</li>
+          </ul>
+        </article>
+        <article class="event reveal">
+          <span class="badge">Main Ceremony</span>
+          <div class="icon">♡</div>
+          <h4>Muhurtham — The Wedding</h4>
+          <ul>
+            <li>📅 Saturday, Dec 12, 2026</li>
+            <li>🕘 09:15 AM · Auspicious Sumuhurtham</li>
+            <li>📍 Main Mandap, SCCR Convention</li>
+            <li>👕 Traditional Royal Silk / Kanjeevaram</li>
+          </ul>
+        </article>
+        <article class="event reveal">
+          <div class="icon">✦</div>
+          <h4>Grand Reception</h4>
+          <ul>
+            <li>📅 Saturday, Dec 12, 2026</li>
+            <li>🕖 07:00 PM onwards</li>
+            <li>📍 SCCR Convention Palace, Mydukur</li>
+            <li>👕 Royal Evening Wear / Indo-Western</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section venue">
+      <p class="eyebrow reveal">Where we celebrate</p>
+      <h3 class="title reveal">The Venue</h3>
+      <div class="divider reveal"><span>◆</span></div>
+      <div class="venue-card reveal">
+        <div class="venue-info">
+          <div class="icon">📍</div>
+          <h4>SCCR Convention</h4>
+          <p class="venue-loc">Mydukur, Andhra Pradesh</p>
+          <p>The wedding ceremonies will be held at the Main Mandap of the convention centre. Ample parking and guest seating will be arranged for everyone.</p>
+          <div class="btns">
+            <a class="btn gold" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=SCCR%20Convention%2C%20Mydukur%2C%20Andhra%20Pradesh">Open Maps</a>
+            <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=SCCR%20Convention%2C%20Mydukur%2C%20Andhra%20Pradesh">Directions</a>
+          </div>
+        </div>
+        <div class="venue-img"><img src="images/venue.jpg" alt="SCCR Convention venue" /></div>
+      </div>
+    </section>
+
+    <section class="section rsvp">
+      <p class="eyebrow reveal">Kindly respond</p>
+      <h3 class="title reveal">RSVP</h3>
+      <div class="divider reveal"><span>◆</span></div>
+      <form id="rsvpForm" class="rsvp-form reveal" novalidate>
+        <label for="rName">Your Name *</label>
+        <input id="rName" name="name" type="text" placeholder="e.g. Ananya Sharma" required />
+
+        <label for="rPhone">Mobile Number</label>
+        <input id="rPhone" name="phone" type="tel" placeholder="+91 ..." />
+
+        <label id="joinLabel">Will you join us? *</label>
+        <div class="choice-row" role="radiogroup" aria-labelledby="joinLabel">
+          <label class="choice"><input type="radio" name="attending" value="Joyfully Accepts" required /><span>Joyfully Accepts</span></label>
+          <label class="choice"><input type="radio" name="attending" value="Blessings from Afar" /><span>Blessings from Afar</span></label>
+        </div>
+
+        <label for="rGuests">Number of Guests</label>
+        <input id="rGuests" name="guests" type="number" min="1" max="20" value="1" />
+
+        <label>Which events will you attend?</label>
+        <div class="chip-row">
+          <label class="choice chip"><input type="checkbox" name="events" value="Haldi Ceremony" /><span>Haldi Ceremony</span></label>
+          <label class="choice chip"><input type="checkbox" name="events" value="Mehendi Sangeet" /><span>Mehendi Sangeet</span></label>
+          <label class="choice chip"><input type="checkbox" name="events" value="Muhurtham" /><span>Muhurtham</span></label>
+          <label class="choice chip"><input type="checkbox" name="events" value="Grand Reception" /><span>Grand Reception</span></label>
+        </div>
+
+        <label for="rWishes">Your Wishes</label>
+        <textarea id="rWishes" name="wishes" rows="3" placeholder="Write your blessings for the couple..."></textarea>
+
+        <button type="submit" class="send">Send RSVP ➤</button>
+        <p id="rsvpMsg" class="rsvp-msg" role="status"></p>
+      </form>
+    </section>
+
+    <footer>With love, Venkata Pavan Kumar Dath &amp; Yasaswani ♥</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
