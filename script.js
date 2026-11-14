@@ -16,8 +16,8 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.15 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Countdown (Muhurtham 09:15 AM IST)
-const target = new Date('2026-12-12T09:15:00+05:30').getTime();
+// Countdown (Muhurtham 07:30 AM IST)
+const target = new Date('2026-12-12T07:30:00+05:30').getTime();
 const pad = n => String(n).padStart(2, '0');
 function tick() {
   let diff = Math.max(0, target - Date.now());
