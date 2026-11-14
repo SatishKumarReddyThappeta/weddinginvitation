@@ -6,7 +6,7 @@
   <title>Venkata Pavan Kumar Dath &amp; Yasaswani | Wedding Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;500&family=Great+Vibes&family=Lora:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;500&family=Great+Vibes&family=Lora:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="locked">
@@ -17,14 +17,12 @@
   <!-- Opening page -->
   <section id="opening">
     <div class="card">
-      <div class="pillar left"></div>
-      <div class="pillar right"></div>
-      <div class="heart">♥</div>
-      <h1 class="open-names">Yasaswani<span class="amp">&amp;</span>Pavan</h1>
-      <div class="divider small"><span>❦</span></div>
-      <p class="open-date">December 12, 2026</p>
-      <p class="open-sub">Cordially Invites</p>
-      <button id="openBtn" type="button">Open</button>
+      <div class="monogram">
+        <div class="mono-letters">P<i>&amp;</i>Y</div>
+        <div class="mono-date">12 · 12 · 2026</div>
+      </div>
+      <h1 class="open-names">Venkata Pavan Kumar Dath<span class="amp">&amp;</span>Yasaswani</h1>
+      <button id="openBtn" type="button">Open Invitation</button>
     </div>
   </section>
 
@@ -34,9 +32,11 @@
     <header class="hero">
       <div class="hero-text reveal">
         <p class="eyebrow">Together with their families</p>
-        <h2 class="script big">Venkata Pavan Kumar Dath</h2>
-        <p class="amp-big">&amp;</p>
-        <h2 class="script big">Yasaswani</h2>
+        <div class="names">
+          <h2 class="script big">Venkata Pavan Kumar Dath</h2>
+          <p class="amp-big">&amp;</p>
+          <h2 class="script big">Yasaswani</h2>
+        </div>
         <p class="hero-date">Saturday, December 12, 2026</p>
         <p class="hero-place">SCCR Convention · Mydukur</p>
         <p class="hero-quote">“Your presence makes us very happy”</p>
@@ -92,8 +92,8 @@
           <h4>Haldi Ceremony</h4>
           <ul>
             <li>📅 Friday, Dec 11, 2026</li>
-            <li>🕘 09:00 AM onwards</li>
-            <li>📍 Banquet Lawn, SCCR Convention</li>
+            <li>🕚 11:00 AM onwards</li>
+            <li>📍 Home</li>
             <li>👕 Sunlit Yellow / Shades of Gold</li>
           </ul>
         </article>
@@ -101,9 +101,9 @@
           <div class="icon">✿</div>
           <h4>Mehendi Sangeet</h4>
           <ul>
-            <li>📅 Friday, Dec 11, 2026</li>
-            <li>🕡 06:30 PM onwards</li>
-            <li>📍 Grand Hall, SCCR Convention</li>
+            <li>📅 Thursday, Dec 10, 2026</li>
+            <li>🕙 10:00 AM onwards</li>
+            <li>📍 Home</li>
             <li>👕 Festive Ethnic / Emerald &amp; Floral</li>
           </ul>
         </article>
@@ -131,6 +131,17 @@
       </div>
     </section>
 
+    <section class="section moments">
+      <p class="eyebrow reveal">Moments</p>
+      <h3 class="title reveal">A Glimpse of Us</h3>
+      <div class="divider reveal"><span>◆</span></div>
+      <div class="gallery">
+        <figure class="shot big reveal"><img src="images/bride_groom_picture.jpeg" alt="Venkata Pavan Kumar Dath and Yasaswani" loading="lazy" /></figure>
+        <figure class="shot reveal"><img src="images/Haldi_celeb.jpeg" alt="Haldi celebration" loading="lazy" /></figure>
+        <figure class="shot reveal"><img src="images/Mandapam.jpg" alt="Mandapam" loading="lazy" /></figure>
+      </div>
+    </section>
+
     <section class="section venue">
       <p class="eyebrow reveal">Where we celebrate</p>
       <h3 class="title reveal">The Venue</h3>
@@ -146,7 +157,7 @@
             <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=SCCR%20Convention%2C%20Mydukur%2C%20Andhra%20Pradesh">Directions</a>
           </div>
         </div>
-        <div class="venue-img"><img src="images/venue.jpg" alt="SCCR Convention venue" /></div>
+        <div class="venue-img"><img src="images/Mandapam.jpg" alt="SCCR Convention venue" /></div>
       </div>
     </section>
 
@@ -185,6 +196,13 @@
         <p id="rsvpMsg" class="rsvp-msg" role="status"></p>
       </form>
     </section>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+      <button class="lb-close" type="button" aria-label="Close">&times;</button>
+      <button class="lb-nav lb-prev" type="button" aria-label="Previous photo">&#10094;</button>
+      <img class="lb-img" alt="" />
+      <button class="lb-nav lb-next" type="button" aria-label="Next photo">&#10095;</button>
+    </div>
 
     <footer>With love, Venkata Pavan Kumar Dath &amp; Yasaswani ♥</footer>
   </main>
