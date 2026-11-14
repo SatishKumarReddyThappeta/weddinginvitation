@@ -81,7 +81,7 @@ const palette = [
 ];
 // Small sparkling diamonds mixed in with the flowers
 const gems = ['#fff3c4', '#f7d774', '#ffffff', '#e8c97e'];
-const count = innerWidth < 600 ? 18 : 32;
+const count = innerWidth < 600 ? 20 : 35;
 const petals = Array.from({ length: count }, () => newPetal(true));
 function newPetal(random) {
   const gem = Math.random() < 0.5;
@@ -90,11 +90,11 @@ function newPetal(random) {
     gemColor: gems[Math.floor(Math.random() * gems.length)],
     twinkle: Math.random() * Math.PI * 2,
     x: Math.random() * innerWidth,
-    y: random ? Math.random() * innerHeight : -20,
+    y: random ? Math.random() * innerHeight : -20 - Math.random() * 120, // new ones always enter from the top
     r: gem ? 2 + Math.random() * 2.2 : 2.4 + Math.random() * 3.6,
-    vy: 0.25 + Math.random() * 0.45,   // slow fall
+    vy: 0.35 + Math.random() * 0.45,   // slow, steady fall from top to bottom
     sway: Math.random() * Math.PI * 2,
-    swaySpeed: 0.004 + Math.random() * 0.008,
+    swaySpeed: 0.003 + Math.random() * 0.005,
     rot: Math.random() * Math.PI,
     vr: (Math.random() - 0.5) * 0.015,
     color: palette[Math.floor(Math.random() * palette.length)],
@@ -128,7 +128,7 @@ function draw(p) {
 function loop() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   petals.forEach((p, i) => {
-    p.y += p.vy; p.sway += p.swaySpeed; p.x += Math.sin(p.sway) * 0.5; p.rot += p.vr;
+    p.y += p.vy; p.sway += p.swaySpeed; p.x += Math.sin(p.sway) * 0.2; p.rot += p.vr;
     if (p.y > canvas.height + 20) petals[i] = newPetal(false);
     draw(p);
   });
